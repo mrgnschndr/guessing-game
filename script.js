@@ -9,7 +9,7 @@ let userGuess1 = window.prompt(`${userName}, please guess a number between 1 and
 usedGuesses ++;
 let remainingGuesses = 3 - usedGuesses;
 
-// NOTE: If a user's guess is incorrect, respond with a prompt letting them know whether or not their guess was too high or too low and how many chances remain.
+// Prompt user to guess a random number (1)
 if (userGuess1 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
 } else if (userGuess1 > randomNumber) {
@@ -43,7 +43,8 @@ remainingGuesses = 3 - usedGuesses;
 if (userGuess3 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
 } else if (userGuess3 > randomNumber) {
-    window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
+    window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guess remaining.`);
 } else if (userGuess3 < randomNumber) {
-    window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
+    window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guess remaining.`);
+    window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
 }
