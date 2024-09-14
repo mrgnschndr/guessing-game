@@ -23,6 +23,7 @@ if (userGuess1 == randomNumber) {
 // Prompt user to guess a random number (2)
 let userGuess2 = window.prompt(`${userName}, please guess another random number between 1 and 50.`);
 usedGuesses ++;
+remainingGuesses = 3 - usedGuesses;
 
 if (userGuess2 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
@@ -37,6 +38,7 @@ if (userGuess2 == randomNumber) {
 // Prompt user to guess a random number (3)
 let userGuess3 = window.prompt(`${userName}, please guess one more random number between 1 and 50.`);
 usedGuesses ++;
+remainingGuesses = 3 - usedGuesses;
 
 if (userGuess3 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
