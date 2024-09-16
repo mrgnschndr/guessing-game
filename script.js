@@ -27,6 +27,12 @@ let remainingGuesses = 3 - usedGuesses;
 // Prompt user to guess a random number (1)
 if (userGuess1 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
+    let playAgain = window.confirm(`Want to play again, ${userName}?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
 } else if (userGuess1 > randomNumber) {
     window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
 } else if (userGuess1 < randomNumber) {
@@ -36,6 +42,12 @@ if (userGuess1 == randomNumber) {
     userGuess1 = window.prompt(`${userName}, please guess a number between 1 and 50.`);
     if (userGuess1 == randomNumber) {
         window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
+        playAgain = window.confirm(`Want to play again, ${userName}?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
     } else if (userGuess1 > randomNumber) {
         window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
     } else if (userGuess1 < randomNumber) {
@@ -53,6 +65,12 @@ remainingGuesses = 3 - usedGuesses;
 
 if (userGuess2 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
+    playAgain = window.confirm(`Want to play again, ${userName}?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
 } else if (userGuess2 > randomNumber) {
     window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guess remaining.`);
 } else if (userGuess2 < randomNumber) {
@@ -62,6 +80,12 @@ if (userGuess2 == randomNumber) {
     userGuess2 = window.prompt(`${userName}, please guess a number between 1 and 50.`);
     if (userGuess2 == randomNumber) {
         window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
+        playAgain = window.confirm(`Want to play again, ${userName}?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
     } else if (userGuess2 > randomNumber) {
         window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guess remaining.`);
     } else if (userGuess2 < randomNumber) {
@@ -79,24 +103,56 @@ remainingGuesses = 3 - usedGuesses;
 
 if (userGuess3 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
+    playAgain = window.confirm(`Want to play again, ${userName}?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
 } else if (userGuess3 > randomNumber) {
     window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
 } else if (userGuess3 < randomNumber) {
     window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
-    window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+    playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+    if (playAgain === true) {
+        window.location = "index.html";
+    } else {
+        document.stop();
+    }
 } else {
     window.alert(`Hmmm... That doesn't look like a number. Go ahead and guess again. You have ${(remainingGuesses + 1)} guess remaining.`);
     userGuess3 = window.prompt(`${userName}, please guess a number between 1 and 50.`);
     if (userGuess3 == randomNumber) {
         window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
+        playAgain = window.confirm(`Want to play again, ${userName}?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
     } else if (userGuess3 > randomNumber) {
         window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
-        window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+        playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
     } else if (userGuess3 < randomNumber) {
         window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
-        window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+        playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
     } else {
         window.alert(`Incorrect! You did not guess a number. You have ${remainingGuesses} guesses remaining.`);
-        window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+        playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+        if (playAgain === true) {
+            window.location = "index.html";
+        } else {
+            document.stop();
+        }
     }
 }
