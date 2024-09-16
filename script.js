@@ -40,7 +40,10 @@ if (userGuess1 == randomNumber) {
         window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
     } else if (userGuess1 < randomNumber) {
         window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
-} }
+    } else {
+        window.alert(`Incorrect! You did not guess a number. You have ${remainingGuesses} guesses remaining.`);
+    }
+}
 
 
 // Prompt user to guess a random number (2)
@@ -63,7 +66,10 @@ if (userGuess2 == randomNumber) {
         window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guess remaining.`);
     } else if (userGuess2 < randomNumber) {
         window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guess remaining.`);
-} }
+    } else {
+        window.alert(`Incorrect! You did not guess a number. You have ${remainingGuesses} guess remaining.`);
+    } 
+}
 
 
 // Prompt user to guess a random number (3)
@@ -85,7 +91,12 @@ if (userGuess3 == randomNumber) {
         window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
     } else if (userGuess3 > randomNumber) {
         window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
+        window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
     } else if (userGuess3 < randomNumber) {
         window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
         window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
-} }
+    } else {
+        window.alert(`Incorrect! You did not guess a number. You have ${remainingGuesses} guesses remaining.`);
+        window.alert(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
+    }
+}
