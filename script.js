@@ -66,7 +66,6 @@ if (userGuess2 == randomNumber) {
 } }
 
 
-
 // Prompt user to guess a random number (3)
 let userGuess3 = window.prompt(`${userName}, please guess one more random number between 1 and 50.`);
 usedGuesses ++;
