@@ -1,3 +1,4 @@
+function game() {
 let userName = window.prompt("Hi!\nWhat's your name?");
     console.log(userName);
 // Validate user's input as a name
@@ -34,7 +35,7 @@ if (userGuess1 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
     let playAgain = window.confirm(`Want to play again, ${userName}?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -49,7 +50,7 @@ if (userGuess1 == randomNumber) {
         window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
         playAgain = window.confirm(`Want to play again, ${userName}?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -77,7 +78,7 @@ if (userGuess2 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
     playAgain = window.confirm(`Want to play again, ${userName}?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -92,7 +93,7 @@ if (userGuess2 == randomNumber) {
         window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
         playAgain = window.confirm(`Want to play again, ${userName}?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -120,7 +121,7 @@ if (userGuess3 == randomNumber) {
     window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
     playAgain = window.confirm(`Want to play again, ${userName}?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -130,7 +131,7 @@ if (userGuess3 == randomNumber) {
     window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
     playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
     if (playAgain === true) {
-        window.location = "index.html";
+        game();
     } else {
         document.stop();
     }
@@ -141,7 +142,7 @@ if (userGuess3 == randomNumber) {
         window.alert(`CONGRATULATIONS! You've won the game by guessing the random number ${randomNumber}!`);
         playAgain = window.confirm(`Want to play again, ${userName}?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -149,7 +150,7 @@ if (userGuess3 == randomNumber) {
         window.alert(`Incorrect! Your guess was too high. You have ${remainingGuesses} guesses remaining.`);
         playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -157,7 +158,7 @@ if (userGuess3 == randomNumber) {
         window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
         playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
@@ -165,9 +166,13 @@ if (userGuess3 == randomNumber) {
         window.alert(`Incorrect! You did not guess a number. You have ${remainingGuesses} guesses remaining.`);
         playAgain = window.confirm(`Sorry, ${userName}, you did not guess the correct number. It was ${randomNumber}. Play again?`);
         if (playAgain === true) {
-            window.location = "index.html";
+            game();
         } else {
             document.stop();
         }
     }
 }
+
+}
+
+game();
