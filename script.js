@@ -5,10 +5,14 @@ if (userName && (isNaN(userName)) && (userName.length >= 2)) {
     console.log(userName);
 } else if (userName && (isNaN(userName)) && (userName.length < 2)) {
     userName = window.prompt("Hmmm... That looks like an initial. What's your first name?"); 
-} else if (isNaN(userName) === false) {
+} else if (userName && isNaN(userName) === false) {
     userName = window.prompt("Hmmm... That looks like a number. What's your first name?");
 } else {
     userName = window.prompt("Hmmm... That doesn't look like a name. What's your first name?");
+}
+
+if ((isNaN(userName) === false) || (userName.length < 2) || (userName === false)) {
+    userName = "User";
 }
 
 // Determine random number between 1 and 50
@@ -28,7 +32,6 @@ if (userGuess1 == randomNumber) {
 } else if (userGuess1 < randomNumber) {
     window.alert(`Incorrect! Your guess was too low. You have ${remainingGuesses} guesses remaining.`);
 }
-
 
 
 // Prompt user to guess a random number (2)
